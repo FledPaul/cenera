@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/fledpaul/cenera">
-    <img src="img/cenera.png" alt="Logo" width="100" height="137.5">
+    <img src="img/cenera.png" width="100" height="137.5">
   </a>
   
   <h3 align="center">Cenera - Permutations Made Simple</h3>
@@ -17,3 +17,8 @@
 </div>
 
 ## About The Project
+<div align="center">
+  <a href="https://github.com/fledpaul/preview">
+    <img src="img/preview.png" width="227" height="161.5">
+  </a>
+</div>
