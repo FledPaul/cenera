@@ -19,7 +19,7 @@
 ## About The Project
 <div align="center">
   <a href="https://github.com/fledpaul/preview">
-    <img src="img/Preview.png" width="681" height="484.5">
+    <img src="img/Preview.png">
   </a>
 </div>
 <br>
