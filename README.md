@@ -59,13 +59,21 @@ all permutations fast and easy.
 
 ## Donations
 ```sh
-Bitcoin: bc1q0jlnpzyewqxn4dlmn5kxplq0etchhjf880mw64```
+Bitcoin: bc1q0jlnpzyewqxn4dlmn5kxplq0etchhjf880mw64
+```
+
 ```sh
-Bitcoin Cash: qp9fxxrejkwp0zmrd3kjavd7xt7c7gdx0uar7f9j6w```
+Bitcoin Cash: qp9fxxrejkwp0zmrd3kjavd7xt7c7gdx0uar7f9j6w
+```
+
 ```sh
-Ethereum: 0x0B58C4FA54E81193E60dc0312f98C3738999fC45```
+Ethereum: 0x0B58C4FA54E81193E60dc0312f98C3738999fC45
+```
+
 ```sh
-```Zilliqa: zil1m6eyqm7flq2cwkxm8l60g836a75yq5mtdzlcjw```
+Zilliqa: zil1m6eyqm7flq2cwkxm8l60g836a75yq5mtdzlcjw
+```
+
 Each donation will be distributed among contributors
 
 ## License
