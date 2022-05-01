@@ -74,7 +74,7 @@ Ethereum: 0x0B58C4FA54E81193E60dc0312f98C3738999fC45
 Zilliqa: zil1m6eyqm7flq2cwkxm8l60g836a75yq5mtdzlcjw
 ```
 
-Each donation will be distributed among contributors
+Each donation will be distributed among contributors.
 
 ## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
