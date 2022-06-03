@@ -17,11 +17,6 @@
 </div>
 
 ## About The Project
-<div align="center">
-  <a href="https://github.com/fledpaul/preview">
-    <img src="img/Preview.png">
-  </a>
-</div>
 <br>
 
 With Cenera I try to offer everyone, no matter if beginner,
