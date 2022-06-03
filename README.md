@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/fledpaul/cenera">
-    <img src="img/Cenera.png" height="150">
+    <img src="img/Cenera.png" height="150" width="525">
   </a>
   
   <h3 align="center">Cenera - Permutations Made Simple</h3>
