@@ -7,12 +7,12 @@
   <p align="center">
     Cenera is a tool to quickly find all possible anagrams of a word.
     <br/>
-    <a href="https://projects.fled.dev/cenera"><strong>View Details»</strong></a>
+    <a href="https://fled.dev/cenera"><strong>View Details»</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="mailto:report@fled.dev">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="mailto:request@fled.dev">Request Feature</a>
   </p>
 </div>
 
@@ -43,7 +43,7 @@ all permutations fast and easy.
   That's it. You have successfully started Cenera.
   
   ## Roadmap
-- [x] Add .exe
+- [ ] Add .exe
 - [ ] Add Changelog
 - [ ] Detect Real Words
 - [ ] Multi-Language Support
@@ -80,6 +80,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Twitter - [@fledpaul](https://twitter.com/fledpaul)
 <br>
-E-Mail - contact@github.fled.dev
+E-Mail - contact@fled.dev
 
 Project Link: [https://github.com/fledpaul/cenera](https://github.com/fledpaul/cenera)
