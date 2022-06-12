@@ -43,7 +43,8 @@ all permutations fast and easy.
   That's it. You have successfully started Cenera.
   
   ## Roadmap
-- [ ] Add .exe
+- [x] Add .exe
+- [ ] Automatic Library Installation
 - [ ] Add Changelog
 - [ ] Detect Real Words
 - [ ] Multi-Language Support
