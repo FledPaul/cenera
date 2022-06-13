@@ -5,7 +5,7 @@ import os
 
 class SetUp:
   def AutoUpdate(self):
-    AutoUpdate = open('autoupdate.json', 'r+')
+    AutoUpdate = open('json/autoupdate.json', 'r+')
     AutoUpdateData = json.load(AutoUpdate)   
     # Check Update
     if AutoUpdateData['updated'] == False:
