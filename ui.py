@@ -16,7 +16,7 @@ class SetUp:
     AutoUpdate = open('json/alis.json', 'r+')
     AutoUpdateData = json.load(AutoUpdate)   
     # Check Update
-    if AutoUpdateData['updated'] == False:
+    if AutoUpdateData['updated'] is False:
       time.sleep(1)
       print()
       RequiredLibs = AutoUpdateData['libs'].split(' ')
