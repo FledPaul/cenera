@@ -74,7 +74,7 @@ class AppWindow(QMainWindow):
             print('Error : Invalid Length')
             LogFile.write('Error : Invalid Length')
             time.sleep(2)
-            exit()
+            sys.exit()
 
           # Generate Perms
           PermList = [''.join(p) for p in permutations(Chars)]
@@ -91,7 +91,7 @@ class AppWindow(QMainWindow):
             print('Error : Something Went Wrong')
             LogFile.write('Error : Something Went Wrong')
             time.sleep(2)
-            exit()
+            sys.exit()
 
           with open('perms/'+Chars+'.lst', 'w') as PermFile:
             PermFile.write('\n'.join(map(str, PermList)))
