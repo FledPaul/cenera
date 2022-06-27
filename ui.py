@@ -6,8 +6,8 @@ import time
 import os
 
 from datetime import date
-from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QLineEdit, QPushButton
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton
 
 
 # Automatic Library Installation
