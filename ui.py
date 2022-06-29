@@ -1,10 +1,11 @@
 # Import Libraries
-from itertools import permutations
 import sys
 import json
 import time
 import os
+import shlex
 
+from itertools import permutations
 from datetime import date
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton
@@ -24,7 +25,7 @@ class SetUp:
       # Update Libraries
       for i in range(len(RequiredLibs)):
         CurrentLibCount = CurrentLibCount + 1
-        os.system('pip install ' + RequiredLibs[CurrentLibCount])
+        os.system(shlex.quote('pip install ' + RequiredLibs[CurrentLibCount]))
         # Update 'Updated' To 'True'
         UpdateData = {"updated": True, "libs": AutoUpdateData['libs']}
         AutoUpdate.seek(0)
@@ -98,6 +99,7 @@ class AppWindow(QMainWindow):
 
           # Change 'Generate' To 'Saved'
           self.GenerateBtn.setText('Generated')
+          print('Success : Process Finished')
 
         # Generate Button
         self.GenerateBtn = QPushButton('Generate', self)

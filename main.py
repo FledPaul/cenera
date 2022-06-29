@@ -1,6 +1,7 @@
 # Import Libraries
 import os
 import time
+import shlex
 
 from art import *
 from termcolor import colored
@@ -9,7 +10,7 @@ from itertools import permutations
 # Intern Functions
 class RunIn:
     def ClearTerminal(self):
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system(shlex.quote('cls' if os.name == 'nt' else 'clear'))
 
 # Define Class
 InternFunctions = RunIn()
