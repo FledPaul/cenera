@@ -10,29 +10,6 @@ from datetime import date
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton
 
-
-# Automatic Library Installation
-class SetUp:
-  def AutoUpdate(self):
-    AutoUpdate = open('json/alis.json', 'r+')
-    AutoUpdateData = json.load(AutoUpdate)   
-    # Check Update
-    if AutoUpdateData['updated'] is False:
-      time.sleep(1)
-      print()
-      RequiredLibs = AutoUpdateData['libs'].split(' ')
-      CurrentLibCount = -1
-      # Update Libraries
-      for i in range(len(RequiredLibs)):
-        CurrentLibCount = CurrentLibCount + 1
-        os.system(shlex.quote('pip install ' + RequiredLibs[CurrentLibCount]))
-        # Update 'Updated' To 'True'
-        UpdateData = {"updated": True, "libs": AutoUpdateData['libs']}
-        AutoUpdate.seek(0)
-        AutoUpdate.truncate()
-        json.dump(UpdateData, AutoUpdate, indent=2)
-        print('Dependencies Installed!')
-
 class AppWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -55,14 +32,20 @@ class AppWindow(QMainWindow):
           Date = date.today()
           Date = Date.strftime('%b-%d-%Y')
 
+          # Create Log Folder
+          if not os.path.isdir('log'):
+            os.mkdir('log')
+            print('Success : Log Directory Created')
+
           # Delete (Existing) Log File
-          try:
-              os.remove(Date + '.log')
-          except FileNotFoundError:
-              pass
+          if os.path.isfile('log/' + Date + '.log'):
+            os.remove('log/' + Date + '.log')
+            print('Success : Old Log File Deleted')
 
           # Create Log File
-          LogFile = open(Date + '.log', 'a')
+          LogFile = open('log/' + Date + '.log', 'a')
+          print('Success : New Log File Created')
+          LogFile.write('Success : New Log File Created\n')
 
           #####################################################
 
@@ -73,7 +56,7 @@ class AppWindow(QMainWindow):
 
           if CharsLength < 2:
             print('Error : Invalid Length')
-            LogFile.write('Error : Invalid Length')
+            LogFile.write('Error : Invalid Length\n')
             time.sleep(2)
             sys.exit()
 
@@ -83,23 +66,26 @@ class AppWindow(QMainWindow):
           # Save Perms
           if not os.path.exists('perms'):
             os.makedirs('perms')
-            print('Success : Directory Created')
-            LogFile.write('Success : Directory Created')
+            print('Success : Permutation Directory Created')
+            LogFile.write('Success : Permutation Directory Created\n')
           elif os.path.exists('perms'):
             print('Success : Directory Exists')
-            LogFile.write('Success : Directory Exists')
+            LogFile.write('Success : Directory Exists\n')
           else:
             print('Error : Something Went Wrong')
-            LogFile.write('Error : Something Went Wrong')
+            LogFile.write('Error : Something Went Wrong\n')
             time.sleep(2)
             sys.exit()
 
-          with open('perms/'+Chars+'.lst', 'w') as PermFile:
+          with open('perms/' + Chars + '.lst', 'w') as PermFile:
             PermFile.write('\n'.join(map(str, PermList)))
+            print('Success : Permutations Written')
+            LogFile.write('Success : Permutations Written')
 
           # Change 'Generate' To 'Saved'
           self.GenerateBtn.setText('Generated')
           print('Success : Process Finished')
+          LogFile.write('Success : Process Finished\n')
 
         # Generate Button
         self.GenerateBtn = QPushButton('Generate', self)

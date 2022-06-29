@@ -9,7 +9,8 @@ from itertools import permutations
 
 # Intern Functions
 class RunIn:
-    def ClearTerminal(self):
+    @staticmethod
+    def ClearTerminal():
         os.system(shlex.quote('cls' if os.name == 'nt' else 'clear'))
 
 # Define Class
@@ -17,17 +18,20 @@ InternFunctions = RunIn()
 
 # Application
 class Application:
-    def WelcomeMsg(self):
+    @staticmethod
+    def WelcomeMsg():
         InternFunctions.ClearTerminal()
         tprint('Cenera', font='bulbhead')
         time.sleep(1)
         print()
 
-    def UserInfo(self):
+    @staticmethod
+    def UserInfo():
         global SelectedCharacters
         SelectedCharacters = input(colored('Your Word: ', 'green', attrs=['bold']))
 
-    def RunProcess(self):
+    @staticmethod
+    def RunProcess():
         LettersLength = len(SelectedCharacters)
         LettersLength = int(LettersLength)
 
@@ -48,7 +52,8 @@ class Application:
         InternFunctions.ClearTerminal()
         print(*PermList, sep = '\n')
 
-    def SavePerms(self):
+    @staticmethod
+    def SavePerms():
         if not os.path.exists('perms'):
             os.makedirs('perms')
 
