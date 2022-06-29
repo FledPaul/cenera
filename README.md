@@ -44,15 +44,10 @@ all permutations fast and easy.
   
   ## Roadmap
 - [x] Add .exe
-- [ ] Automatic Library Installation
-- [ ] Add Changelog
+- [ ] Add .appimage
+- [ ] Add .deb
+- [ ] Add .log
 - [ ] Detect Real Words
-- [ ] Multi-Language Support
-    - [ ] German
-    - [ ] Spanish
-    - [ ] Mandarin
-    - [ ] Hindi
-    - [ ] French
 
 ## Donations
 ```sh
